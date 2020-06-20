@@ -40,7 +40,7 @@ import * as THREE from "three";
 
 function main() {
   const renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight )
+  renderer.setSize( window.innerWidth, window.innerHeight )
   document.body.appendChild( renderer.domElement );
   renderer.physicallyCorrectLights = true;
 
@@ -78,7 +78,7 @@ renderer.setSize( window.innerWidth, window.innerHeight )
   }
 
   const shadowTexture = loader.load('https://threejsfundamentals.org/threejs/resources/images/roundshadow.png');
-  const sphereShadowBases = [];
+  const sphereShadowBases: any[] = [];
   {
     const sphereRadius = 1;
     const sphereWidthDivisions = 32;
@@ -142,7 +142,7 @@ renderer.setSize( window.innerWidth, window.innerHeight )
     scene.add(light.target);
   }
 
-  function resizeRendererToDisplaySize(renderer) {
+  function resizeRendererToDisplaySize(renderer: THREE.WebGLRenderer) {
     const canvas = renderer.domElement;
     const width = canvas.clientWidth;
     const height = canvas.clientHeight;
@@ -153,7 +153,7 @@ renderer.setSize( window.innerWidth, window.innerHeight )
     return needResize;
   }
 
-  function render(time) {
+  function render(time: number) {
     time *= 0.001;  // convert to seconds
 
     resizeRendererToDisplaySize(renderer);

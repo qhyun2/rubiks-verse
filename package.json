@@ -16,8 +16,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "deploy": "webpack -p && true"
   },
   "repository": {
     "type": "git",
