@@ -1,0 +1,32 @@
+{
+  "name": "rubiks-verse",
+  "version": "1.0.0",
+  "description": "A Rubik's cube blind solve training web app made with TypeScript and three.js which embraces next generation dynamic channels",
+  "dependencies": {
+    "three": "^0.117.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.103.2",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qhyun2/rubiks-verse.git"
+  },
+  "author": "qhyun2",
+  "license": "GNU General Public License v3.0",
+  "bugs": {
+    "url": "https://github.com/qhyun2/rubiks-verse/issues"
+  },
+  "homepage": "https://github.com/qhyun2/rubiks-verse#readme"
+}
