@@ -10,14 +10,16 @@
   },
   "devDependencies": {
     "@types/three": "^0.103.2",
+    "gh-pages": "^3.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server",
+    "deploy": "webpack -p && gh-pages -d dist",
+    "clean": "rm -r dist && mkdir dist"
   },
   "repository": {
     "type": "git",
