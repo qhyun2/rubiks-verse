@@ -1,6 +1,8 @@
 # rubiks-verse
 A Rubik's cube blind solve training web app made with TypeScript and three.js
 
+#### Hosted on GitHub pages: https://qhyun2.github.io/rubiks-verse/
+
 ## Development Setup
 
 ```
